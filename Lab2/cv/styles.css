@@ -1,0 +1,115 @@
+* {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: "Times New Roman";
+  font-size: 24px;
+  line-height: 30px;
+}
+/* Header section */
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  /* margin-top: 50px; */
+}
+.github-icon {
+  width: 25px;
+  height: 25px;
+}
+.name {
+  font-size: 65px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+.first-name {
+  color: rgb(127, 127, 127);
+}
+
+.header-section {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+  /* gap: 24px; */
+}
+.info {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* gap: 24px; */
+}
+.contact-info {
+  display: flex;
+  flex-direction: row;
+}
+/* style links */
+a:link {
+  color: rgb(0, 0, 255);
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(0, 0, 255);
+}
+a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+a:active {
+  color: rgba(0, 0, 255, 0.5);
+  font-style: italic;
+}
+/* main section */
+
+h2 {
+  font-size: 40px;
+  color: rgb(127, 127, 127);
+}
+h3 {
+  font-size: 30px;
+}
+.main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/*main section - Education*/
+.edu-container {
+  display: flex;
+  flex-direction: column;
+  /* gap: 24px; */
+}
+
+/*main section - Skills*/
+.skill-catg {
+  font-weight: bold;
+  font-size: 28px;
+}
+/*main section - Projects*/
+.project-header {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+}
+.seseperator-proj-header {
+  font-size: 32px;
+}
+.proj-skills {
+  font-size: 32px;
+}
+.proj-container {
+  display: flex;
+  flex-direction: column;
+  /* gap: 24px; */
+}
+.project-link {
+  font-size: 32px;
+}
+/* main section - Languages */
+.lang-name {
+  font-weight: bold;
+}
