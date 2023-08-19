@@ -1,0 +1,29 @@
+<div class="row">
+  <button type="button" class="btn btn-primary float-end mb-5" (click)="toggleLang()">{{lang=="ar-SA"?'English':'Arabic'}}</button>
+  <div>
+    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+    [(ngModel)]="searchValue"
+    >
+  </div>
+    <div class="card movie_card col-lg-4 mt-3" *ngFor="let tvshow of allTvShows">
+      <div [routerLink]="['/tvshow',tvshow.id]">
+
+
+      
+      <img [src]="basepath+tvshow.poster_path" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{ tvshow.name | mycustom }}</h5>
+        <span class="movie_info">{{ tvshow.first_air_date | date}}</span>
+        <!-- <p>{{movie.overview | lowercase}}</p> -->
+        <!-- <button class="btn btn-success d-block" [disabled]="myMovie1.notValiable">Watch</button>
+        <button class="btn btn-primary d-block" *ngIf="myMovie1.inStock">Add to Cart</button> -->
+      </div>
+    </div>
+  </div>
+    
+  </div>
+  <mat-paginator [length]="totalPages"
+              [pageSize]="20"
+              aria-label="Select page"
+              (page)="changePage($event)">
+</mat-paginator>
