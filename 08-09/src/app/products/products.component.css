@@ -1,0 +1,5 @@
+.card-content {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    
+}

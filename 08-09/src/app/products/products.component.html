@@ -1,0 +1,51 @@
+<div class="container" style="margin: 16px auto 5px auto">
+  <div class="row" *ngFor="let product of products">
+    <div
+      class="col-lg-3 col-sm-12 col-md-6"
+      *ngFor="let item of product.products; index as i"
+    >
+      <div
+        class="card"
+        style="width: 18rem; margin: 8px 0px 8px 0px; padding: 8px 0px 8px 0px"
+      >
+        <img
+          [src]="item.thumbnail"
+          class="card-img-top"
+          style="
+            width: auto;
+            object-fit: contain;
+            height: 200px;
+            border-radius: 30px;
+          "
+          alt="..."
+          [routerLink]="['product/', item.id]"
+        />
+        <hr style="background-color: gray" />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.title }}</h5>
+          <p class="card-text card-content" style="height: 90px">
+            Description:<br />
+            {{ item.description }}
+          </p>
+          <p class="card-text card-content" id="by">
+            Price:<br /><span
+              style="padding-left: 10px; padding-right: 10px"
+              class="fw-bolder"
+              >$ {{ item.price }}</span
+            >
+          </p>
+
+          <div class="d-grid gap-4">
+            <button
+              class="btn btn-warning"
+              (click)="dec(this.item)"
+              [disabled]="item.stock == 0"
+            >
+              Stocks {{ item.stock }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

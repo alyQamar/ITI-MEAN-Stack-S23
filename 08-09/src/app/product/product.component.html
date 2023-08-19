@@ -1,0 +1,24 @@
+<div class="container mb-5 mt-5">
+  <div class="product-details">
+    <div class="product-image">
+      <img [src]="this.element.thumbnail" alt="Product Image" />
+      <p class="pt-4 text-center">{{ element.title }}</p>
+    </div>
+
+    <div class="product-description">
+      <h2>Product Description</h2>
+      <p>{{ element.description }}</p>
+      <h2>Product Details</h2>
+      <h2>Product Price</h2>
+      <p>${{ element.price }}</p>
+      <h2>Stocks</h2>
+      <p>{{ element.stock }}</p>
+      <form>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" />
+        <br />
+        <input type="submit" value="Add to Cart" />
+      </form>
+    </div>
+  </div>
+</div>

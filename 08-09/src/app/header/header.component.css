@@ -1,0 +1,16 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:gray;
+    opacity: 1; /* Firefox */
+  }
+  .mt-0 {
+    margin-top: 0 !important;
+  }
+  .pl {
+    padding-left:50px;
+  }
+  .banner {
+    width: auto;
+    height: 150px;
+    background-image: url("https://wallpapercave.com/wp/AD38T40.jpg");
+    
+  }
